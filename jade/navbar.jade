@@ -1,0 +1,30 @@
+section#navbar.headroom
+	.nav--wrapper-top
+		.nav--logo-container
+			a(href='index.html'): img.nav--logo(src='../images/logoFull.svg')
+		h1.phonenumber (647) 217-4655
+		h1.email: a(href='mailto:info@torontoskycam.com') info@torontoskycam.com
+
+	.nav--wrapper-bottom
+		input.trigger(type='checkbox', id='mainNavButton')
+		label(for="mainNavButton", onclick) Menu
+
+		ul
+
+			li: a(href="index.html#start") home
+			li: a(href="index.html#about") about
+			li
+				a(href="#services") portfolio
+				ul
+					li: a(href="photography.html") Photography
+					li: a(href="videos.html") Video
+			li
+				a(href="#services") services
+				ul
+					li: a(href="industrial.html") Industrial
+					li: a(href="construction.html") Construction
+					li: a(href="promotional.html") Promotional / Events
+					li: a(href="realestate.html") Real Estate
+			li: a(href="index.html#contact") contact
+	h2.sentence aerial video &amp; photography services
+	img.flag(src='/images/canflag.svg')

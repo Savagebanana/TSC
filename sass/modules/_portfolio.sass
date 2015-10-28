@@ -1,0 +1,85 @@
+.slideshow
+	display: flex
+	position: relative
+	justify-content: center
+	width: 80%
+	height: 55vh
+	overflow-x: hidden
+	margin: 0 auto
+	iframe
+		border: none
+		width: 100%
+		margin: 0 auto
+		@media screen and (max-width: 420px)
+			width: 250px
+			background-size: cover
+
+.pics-container
+	display: flex
+	width: 100%
+	justify-content: center
+.allpics
+	margin-top: 10vh
+	position: relative
+	display: flex
+	flex-flow: row wrap
+	width: 80%
+	// background: pink
+	justify-content: space-around
+
+	img
+		margin-bottom: 2.8%
+.vid-link
+	position: relative
+	display: flex
+	// flex-direction: row
+	// align-items: center
+	justify-content: center
+	width: 100%
+	// text-align:  center
+	a
+		// display: block
+		// align-self: flex-start
+		margin: 0 0 5% 0
+		color: white
+		position: relative
+
+		p
+			font-family: Open Sans, sans-serif
+			font-size: 1.5rem
+
+		&:hover
+			color: $blue + 50
+		&:after
+			display: inline
+			position: absolute
+			right: -12%
+			top: 12%
+			// margin-left: 2%
+			font-family: FontAwesome
+			font-size: 1.5rem
+			content: '\f061'
+			// clear: both
+.video-container
+	display: flex
+	justify-content: center
+	position: relative
+	width: 100%
+	// padding: 0 5% 0 5%
+
+	.allvids
+
+		display: flex
+		justify-content: space-around
+		flex-flow: row wrap
+		width: 80%
+		padding: 5% 0 5% 0
+
+		iframe
+			border: none
+			width: 40%
+			height: 40vh
+			margin-bottom: 2%
+			@media screen and (max-width: 420px)
+				width: 80%
+				height: 40vh

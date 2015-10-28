@@ -1,0 +1,163 @@
+#contact
+	position: relative
+	display: flex
+	flex-direction: column
+	align-items: center
+	width: 100%
+	padding: 3% 0
+	background: white
+	.contact-wrapper
+		width: 80%
+		@media only screen and (orientation: portrait)
+			width: 80%
+
+		.heading-wrapper
+			h1
+				+title
+			p
+				+titleWords
+			p.number
+				width: 100%
+				color: $blue
+				// display: flex
+				// flex-direction: row
+				justify-content: center
+				font-size: 2rem
+				font-weight: 200
+				position: relative
+				text-align: center
+				// line-height: 2.3rem
+				padding: 20% 0
+				@media screen and (min-width: 48em)
+					padding: 3% 0
+
+				&:hover
+					color: $blue + 50
+				&:before
+					margin-right: 2%
+					font-family: FontAwesome
+					font-size: 2rem
+					content: '\f098'
+
+
+
+	.form-wrapper
+		display: flex
+		flex-direction: column
+		align-items: center
+		width: 100%
+		margin: 3% 0
+		.contact-form
+			display: flex
+			flex-direction: column
+			justify-content: space-around
+			width: 33%
+			@media screen and (max-width: 400px)
+				width: 100%
+			input
+				background: none
+				border: solid 2px $blue
+				color: $blue + 50
+				padding: 15px 40px
+				font-size: 1.5rem
+				line-height: 1.7em
+				display: inline-block
+
+				&:focus,
+				&:active
+					outline: none
+
+				&[type="text"], &[type="email"]
+					flex: 1
+					width: 40%
+					border: none
+					border-bottom: solid 2px $blue
+					// @media only screen and (orientation: portrait)
+					// 	width: 80%
+
+				&[type="submit"]
+					flex: 1
+					align-self: center
+					margin-top: 3%
+					text-transform: uppercase
+					&:hover
+						color: white
+						background: $blue
+					&:active
+						color: $blue + 50
+						background: $blue - 10
+			textarea
+
+				position: relative
+				width: 40%
+				flex: 2
+				background: none
+				border: solid 2px $blue
+				color: $blue + 50
+				padding: 5%
+				font-size: 1.5rem
+				margin-top: 2%
+
+				&:focus,
+				&:active
+					outline: none
+			.contact-form
+				display: flex
+				flex-direction: columns
+				align-items: space-between
+
+			.input-group
+				position: relative
+				display: flex
+				width: 100%
+				margin-bottom: 2%
+
+
+
+
+				input:not([type="submit"])
+					padding: 2%
+					margin-bottom: 1%
+
+				input:focus + label,
+				input.has-value + label
+
+					top: 0
+					left: 0
+					font-size: 0.8rem
+					line-height: 0rem
+					color: #aaa
+
+				label
+					position: absolute
+					top: 0
+					left: 0
+					transform: translateY(50%)
+					pointer-events: none
+					font:
+						family: Open Sans, sans-serif
+						style: italic
+						size: 1.3rem
+					color: #999
+					transition: all 0.1s linear
+
+				textarea + label
+					transform: rotateZ(0deg)
+					pointer-events: none
+					font:
+						family: Open Sans, sans-serif
+						style: italic
+						size: 1.3rem
+					color: #999
+					padding-left: 2%
+					line-height: 4rem
+					transition: all 0.1s linear
+
+				textarea:focus + label,
+				textarea.has-value + label
+					transform: rotateZ(-90deg)
+					left: -15%
+					font-size: 0.8rem
+					padding-right: 6%
+
+

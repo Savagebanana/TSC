@@ -1,0 +1,66 @@
+#pics
+	position: relative
+	margin-top: 2%
+	// padding-top: 5%
+	@media screen and (min-width: 1080px)
+		padding-bottom: 4%
+	.promowrapper
+		width: 80%
+		margin: 0 auto
+		.flex-video
+			// height: 0
+			// margin-bottom: 0.88889rem
+			// overflow: hidden
+			padding-bottom: 10%
+			// padding-top: 1.38889rem
+			// position: relative
+		@media (max-width: 600px)
+			width: 20%
+			margin: 0 0
+	.pics-wrapper
+		display: flex
+		flex-direction: row
+		align-items: center
+		margin: 2%auto
+		width: 100%
+
+
+
+		.img-container-1
+			display: none
+			// perspective: 800px
+			// overflow: visible
+			// transform-origin: 100% 100%
+			float: left
+			@media screen and (min-width: 1080px)
+				display: flex
+			img
+				display: relative
+				width: 100%
+				// transform: rotateY(10deg)
+		.img-container-2
+			display: none
+			// perspective: 800px
+			// overflow: visible
+			// transform-origin: 0% 100%
+			float: left
+			@media screen and (min-width: 1080px)
+				display: flex
+			img
+				display: relative
+				float: left
+				clear: both
+				// width: 100%
+				// transform: rotateY(-10deg)
+		img.valley
+			position: relative
+			z-index: 11
+			margin: 0 auto
+			@media screen and (min-width: 1080px)
+				transform: scale(1.1)
+				// position: absolute
+				transform: rotateZ(-5deg)
+				// left: 30%
+				float: left
+				clear: both
+				box-shadow: 0 0 5px rgba(0,0,0,0.3)

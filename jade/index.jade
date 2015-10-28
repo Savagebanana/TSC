@@ -1,0 +1,37 @@
+doctype
+
+html
+	head
+		meta(charset='utf-8')
+		title Toronto Skycam | Professional Aerial Photography And Video
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		meta(name="format-detection", content="telephone=yes")
+		meta(name="keywords", content="aerial, photography, drones, uav, toronto, GTA, surveys, real estate, industrial imaging, promotional events, wedding photography, weddings, sport photography, progression tracking")
+		meta(meta='description', content='Torontos Premiere Aerial Photography Company. Fully certified and insured. Proudly serving the Construction, Industrial, Real Estate, and Promotional industries.' )
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
+		link(rel='stylesheet', href='css/style.css')
+		link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
+		link(rel="icon", href="/favicon.ico", type="image/x-icon")
+
+	body
+		//-top  nav
+		include navbar
+		.main-content#start
+			//- Hidden Div
+			include pics
+			//- Tagline Text
+			include tagline
+			//-  About section
+			include about
+			//-  Services section
+			include services
+			//-  Contact section
+			include contact
+			//-  Footer Section
+		include footer
+		//- jquery scripts
+		script(src='bower_components/jquery/dist/jquery.min.js')
+		script(src='bower_components/FitVids/jquery.fitvids.js')
+		script(src='js/headroom.js')
+		script(src='js/script.js')
+		script(src='js/googletrack.js')

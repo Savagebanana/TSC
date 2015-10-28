@@ -1,0 +1,35 @@
+@mixin servicesHeading
+	font-family: futuraBO, sans-serif
+	color: white
+	display: block
+	position: absolute
+	text-align: center
+	font-size: 2.7rem
+	top: 20vh
+	left: 0
+	right: 0
+	text-shadow: 0 0 5px rgba(0,0,0,0.5)
+
+@mixin title()
+	padding: 2% 0
+	font-family: futuraL, sans-serif
+	font-size: 3rem
+	color: $blue
+	font-weight: normal
+	text-transform: uppercase
+
+@mixin subTitle()
+	display: block
+	font-family: Open Sans, sans-serif
+	font-size: 1.5rem
+	color: lighten($darkgrey, 50%)
+	text-transform: uppercase
+	letter-spacing: 0.1rem
+@mixin titleWords
+	font-family: Open Sans, sans-serif
+	font-size: 1rem
+	color: $darkgrey
+	text-align: center
+@mixin smallDevicesTitle()
+	@media only screen and (orientation: portrait)
+		margin-top: 10%

@@ -1,0 +1,27 @@
+section#tagline
+	position: relative
+	.tagline--wrapper
+		background: white
+		padding: 7% 0
+		z-index: 9998
+		h1
+			+title
+
+		.tagline--subtext
+			width: 95%
+			margin: 0  auto
+			@media screen and (min-width: 48em)
+				width: 80%
+
+
+			p
+				display: block
+				font-family: Open Sans, sans-serif
+				font-size: 1.2rem
+				line-height: 2rem
+				font-weight: 200
+				margin: 2% 0
+				color: lighten($darkgrey, 35%)
+				font-style: oblique
+			span
+				+subTitle
