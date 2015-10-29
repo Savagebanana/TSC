@@ -2,17 +2,14 @@
 	display: flex
 	position: relative
 	justify-content: center
-	width: 80%
-	height: 55vh
-	overflow-x: hidden
-	margin: 0 auto
-	iframe
-		border: none
-		width: 100%
-		margin: 0 auto
-		@media screen and (max-width: 420px)
-			width: 250px
-			background-size: cover
+	align-items: center
+	width: 100%
+	// iframe
+		// width: 100%
+	// 	margin: 0 auto
+	// 	@media screen and (max-width: 420px)
+	// 		width: 250px
+	// 		background-size: cover
 
 .pics-container
 	display: flex
@@ -62,24 +59,11 @@
 			// clear: both
 .video-container
 	display: flex
-	justify-content: center
+	justify-content: space-around
+	align-items: center
 	position: relative
+	flex-flow: row wrap
 	width: 100%
-	// padding: 0 5% 0 5%
 
-	.allvids
-
-		display: flex
-		justify-content: space-around
-		flex-flow: row wrap
-		width: 80%
-		padding: 5% 0 5% 0
-
-		iframe
-			border: none
-			width: 40%
-			height: 40vh
-			margin-bottom: 2%
-			@media screen and (max-width: 420px)
-				width: 80%
-				height: 40vh
+	iframe
+		margin-bottom: 4%
