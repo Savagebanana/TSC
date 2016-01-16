@@ -1,4 +1,4 @@
-jQuery(document).ready (function(){
+$(document).ready (function(){
 	// grab an element
 	var myElement = document.getElementById("navbar");
 	// construct an instance of Headroom, passing the element
@@ -48,9 +48,10 @@ jQuery(document).ready (function(){
 				success: success
 			});
 
-	});
+		});
 
 	event.preventDefault();
 
+	});
 });
 
